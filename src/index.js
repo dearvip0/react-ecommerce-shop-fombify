@@ -11,7 +11,9 @@ import { BrowserRouter } from "react-router-dom";
 ReactDOM.render(
   <BrowserRouter>
     <ProductsProvider>
-      <App />
+      <FilterProvider>
+        <App />
+      </FilterProvider>
     </ProductsProvider>
   </BrowserRouter>,
   document.getElementById("root")
